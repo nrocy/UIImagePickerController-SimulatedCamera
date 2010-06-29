@@ -1,0 +1,6 @@
+
+This is an Objective-C category that fakes taking a picture via iPhone/iPad simulator.
+
+Documentation:
+	* http://wiki.github.com/nrocy/UIImagePickerController-SimulatedCamera
+
