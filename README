@@ -1,5 +1,5 @@
 
-This is an Objective-C category that fakes taking a picture via iPhone/iPad simulator.
+An Objective-C category that enables (fake) taking of a picture from within the iPhone/iPad simulator, avoiding the need to test exclusively in hardware. 
 
 Documentation:
 	* http://wiki.github.com/nrocy/UIImagePickerController-SimulatedCamera
