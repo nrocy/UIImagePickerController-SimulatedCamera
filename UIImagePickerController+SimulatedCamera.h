@@ -9,7 +9,7 @@
 
 @interface UIImagePickerController(SimulatedCamera)
 
--(void)cameraDismissTimerFireMethod:(NSTimer*)theTimer;
+-(void)cameraDismissTimerFireMethod:(NSTimer*)timer;
 -(void)mockCameraWithImageURL:(NSString*)url;
 -(void)mockCameraWithImageURL:(NSString*)url delay:(NSInteger)delay;
 
