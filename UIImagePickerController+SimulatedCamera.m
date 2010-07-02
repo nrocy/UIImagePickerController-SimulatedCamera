@@ -11,6 +11,9 @@
 
 @implementation UIImagePickerController(SimulatedCamera)
 
+#pragma mark -
+#pragma mark Timer methods
+
 -(void)cameraDismissTimerFireMethod:(NSTimer*)timer
 {
 	NSString *urlString = (NSString*)timer.userInfo;
@@ -23,6 +26,14 @@
 	
 	[self.delegate imagePickerController:(UIImagePickerController *)self didFinishPickingMediaWithInfo:(NSDictionary *)info];
 }
+
+-(void)cameraCancellTimerFireMethod:(NSTimer*)timer
+{
+	[self.delegate imagePickerControllerDidCancel:(UIImagePickerController *)self];
+}
+
+#pragma mark -
+#pragma mark Public methods
 
 -(void)mockCameraWithImageURL:(NSString *)url
 {
@@ -39,6 +50,23 @@
 	{
 		NSLog( @"You've called mockCameraWithImageURL but you've not implemented didFinishPickingMediaWithInfo" );
 	}
+}
+
+-(void)mockCancelWithDelay:(NSInteger)delay
+{
+	if( [self.delegate respondsToSelector:@selector(imagePickerControllerDidCancel:)] )
+	{
+		[NSTimer scheduledTimerWithTimeInterval:delay target:self selector:@selector(cameraCancellTimerFireMethod:) userInfo:nil repeats:NO];
+	}
+	else
+	{
+		NSLog( @"You've called mockCancelWithDelay but you've not implemented imagePickerControllerDidCancel" );
+	}
+}
+
+-(void)mockCancel
+{
+	[self mockCancelWithDelay:kUIImagePickerControllerSimulatedCameraDefaultDelay];
 }
 
 @end

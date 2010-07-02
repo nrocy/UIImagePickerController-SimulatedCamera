@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1644DEA811D98CCF0066FA6D /* UIImagePickerController+SimulatedCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 1644DEA711D98CCF0066FA6D /* UIImagePickerController+SimulatedCamera.m */; };
+		1644E0F811DE39510066FA6D /* UIImagePickerController+SimulatedCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 1644E0F711DE39510066FA6D /* UIImagePickerController+SimulatedCamera.m */; };
 		1D3623260D0F684500981E51 /* CameraTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* CameraTestAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -19,8 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1644DEA611D98CCF0066FA6D /* UIImagePickerController+SimulatedCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+SimulatedCamera.h"; sourceTree = "<group>"; };
-		1644DEA711D98CCF0066FA6D /* UIImagePickerController+SimulatedCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+SimulatedCamera.m"; sourceTree = "<group>"; };
+		1644E0F611DE39510066FA6D /* UIImagePickerController+SimulatedCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImagePickerController+SimulatedCamera.h"; path = "../UIImagePickerController+SimulatedCamera.h"; sourceTree = SOURCE_ROOT; };
+		1644E0F711DE39510066FA6D /* UIImagePickerController+SimulatedCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImagePickerController+SimulatedCamera.m"; path = "../UIImagePickerController+SimulatedCamera.m"; sourceTree = SOURCE_ROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* CameraTestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraTestAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* CameraTestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraTestAppDelegate.m; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 		1644DEA411D98C720066FA6D /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				1644DEA611D98CCF0066FA6D /* UIImagePickerController+SimulatedCamera.h */,
-				1644DEA711D98CCF0066FA6D /* UIImagePickerController+SimulatedCamera.m */,
+				1644E0F611DE39510066FA6D /* UIImagePickerController+SimulatedCamera.h */,
+				1644E0F711DE39510066FA6D /* UIImagePickerController+SimulatedCamera.m */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* CameraTestAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* CameraTestViewController.m in Sources */,
-				1644DEA811D98CCF0066FA6D /* UIImagePickerController+SimulatedCamera.m in Sources */,
+				1644E0F811DE39510066FA6D /* UIImagePickerController+SimulatedCamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

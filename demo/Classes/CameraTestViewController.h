@@ -17,6 +17,7 @@
 @property (nonatomic, retain) UIImageView *imageView;
 
 -(IBAction) snapButton;
+-(IBAction) cancelButton;
 
 @end
 

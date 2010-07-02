@@ -54,6 +54,12 @@
 	self.imageView.image = [info objectForKey:UIImagePickerControllerOriginalImage];
 }
 
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)thePicker
+{
+	[thePicker dismissModalViewControllerAnimated:YES];
+	self.imageView.image = nil;
+}
+
 #pragma mark -
 #pragma mark Actions
 
@@ -71,6 +77,23 @@
 	[self presentModalViewController:picker animated:YES];
 	
 	[picker release];
+}
+
+-(IBAction) cancelButton
+{
+	UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+	picker.delegate = self;
+	picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+	picker.showsCameraControls = YES;
+	
+#ifdef DEBUG
+	[picker mockCancelWithDelay:2.0];
+#endif
+	
+	[self presentModalViewController:picker animated:YES];
+	
+	[picker release];
+	
 }
 
 #pragma mark -
