@@ -4,6 +4,9 @@ An Objective-C category that enables (fake) taking of a picture from within the 
 Documentation:
 * http://wiki.github.com/nrocy/UIImagePickerController-SimulatedCamera
 
+Demo:
+* XCode project in the demo subdirectory
+
 Teaser Image:
 * http://nrocy.github.com/simulator_camera.jpg
 
